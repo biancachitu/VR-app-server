@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Login
+  form(action="/users/login" method="post")
+    div
+      label(for="email") Email:
+      input(type="email" name="email" required)
+    div
+      label(for="password") Password:
+      input(type="password" name="password" required)
+    div
+      button(type="submit") Login
+  a(href="/users/register") Register
